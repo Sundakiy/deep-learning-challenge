@@ -29,6 +29,7 @@ I preprocessed the data by:
 • dropping non-beneficial columns,
 • finding the number of data points for each unique value for each of the 
 columns that had more than 10 unique values - APPLICATION_TYPE and 
+
 CLASSIFICATION
 ==============
 • choosing a cutoff point of 600 and 300, respectively, to bin rare 
@@ -47,7 +48,10 @@ They all resulted in the same accuracy rate – right around 72%, so a little sh
 the required target accuracy.
 
 
-Results: Using bulleted lists and images to support your answers, address the following questions:
+RESULTS
+=======
+
+Using bulleted lists and images to support your answers, address the following questions:
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
 Were you able to achieve the target model performance?
@@ -85,9 +89,8 @@ o layer2 = 18 neurons : activation function = ‘tanh’
 o layer3 = 27 neurons : activation function = ‘tanh’
 • epochs = 100
 
-
-
-Summary
+SUMMARY
+=========
 In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 72.8%. Hypertuning resulted in virtually no 
 improvement. I would consider using another classification model to see if it is better at predicting whether applicants will be successful if funded by Alphabet 
 Soup
