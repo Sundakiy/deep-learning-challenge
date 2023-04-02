@@ -86,3 +86,5 @@ improvement. I would consider using another classification model to see if it is
 Soup
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation. -->
+
+IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/
