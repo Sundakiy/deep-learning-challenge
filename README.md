@@ -1,5 +1,5 @@
-Charity Funding Predictor Using Deep Learning Model
-===================================================
+Alphabet Soup Charity Funding Predictor Using Deep Learning Model
+==================================================================
 ![X_](https://user-images.githubusercontent.com/80664491/229380083-6989d0d6-4682-4d9c-8872-9bb7ed953c87.jpg)
 
 Overview of the Analysis
