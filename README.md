@@ -8,7 +8,7 @@ The goal of this project is to create an algorithm using machine learning and ne
 
 ![image](https://user-images.githubusercontent.com/80664491/229381235-1d7fc342-e730-4b5c-bdb4-9468e4d6a6ec.png)
 
-PREPROCESSING
+Preprocessing
 =============
 What variable(s) are the target(s) for your model?
 What variable(s) are the features for your model?
@@ -20,7 +20,7 @@ I preprocessed the data by:
 • finding the number of data points for each unique value for each of the 
 columns that had more than 10 unique values - APPLICATION_TYPE and 
 
-CLASSIFICATION
+Classification
 ==============
 • choosing a cutoff point of 600 and 300, respectively, to bin rare 
 categorical values together into a new value called "Other",
@@ -30,7 +30,8 @@ categorical values together into a new value called "Other",
 • and finally, using `StandardScaler` to scale the training and testing sets
 The resulting data included 44 features. The target variable (y) was
 IS_SUCCESSFUL. The data was split into training and test subsets.
-COMPILING, TRAINING, AND EVALUATING THE MODEL
+
+Compiling, Training, and Evaluating the Model
 ============================================
 The model was required to achieve a target predictive accuracy higher than 
 75%. I made three official attempts using machine learning and neural networks. 
@@ -38,7 +39,7 @@ They all resulted in the same accuracy rate – right around 72%, so a little sh
 the required target accuracy.
 
 
-RESULTS
+Results
 =======
 
 Using bulleted lists and images to support your answers, address the following questions:
@@ -79,7 +80,7 @@ o layer2 = 18 neurons : activation function = ‘tanh’
 o layer3 = 27 neurons : activation function = ‘tanh’
 • epochs = 100
 
-SUMMARY
+Summary
 =========
 In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 72.8%. Hypertuning resulted in virtually no 
 improvement. I would consider using another classification model to see if it is better at predicting whether applicants will be successful if funded by Alphabet 
@@ -87,6 +88,6 @@ Soup
 
 Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation. -->
 
-REFERENCES
+References
 ==========
 IRS. Tax Exempt Organization Search Bulk Data Downloads. https://www.irs.gov/
