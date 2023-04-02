@@ -1,7 +1,7 @@
 Charity Funding Predictor
 ===========================
-Overview
-==============
+Overview of the analysis
+========================
 The goal of this project is to create an algorithm using machine learning and 
 neural networks to predict whether applicants will be successful if funded by the
 fictional non-profit foundation, Alphabet Soup.
@@ -66,3 +66,17 @@ predictive accuracy higher than 72.8%. Hypertuning resulted in virtually no
 improvement. I would consider using another classification model to see if it is 
 better at predicting whether applicants will be successful if funded by Alphabet 
 Soup
+
+<!-- Results: Using bulleted lists and images to support your answers, address the following questions:
+
+Data Preprocessing
+
+What variable(s) are the target(s) for your model?
+What variable(s) are the features for your model?
+What variable(s) should be removed from the input data because they are neither targets nor features?
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Were you able to achieve the target model performance?
+What steps did you take in your attempts to increase model performance?
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation. -->
