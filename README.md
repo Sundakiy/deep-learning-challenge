@@ -7,16 +7,27 @@ Overview of the Analysis
 The goal of this project is to create an algorithm using machine learning and neural networks to predict whether applicants will be successful if funded by the fictional non-profit foundation, Alphabet Soup. I have received from Alphabet Soup’s business team, a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset, there are a number of columns that capture metadata about each organization, such as:
 
 EIN and NAME—Identification columns
+====================================
 APPLICATION_TYPE—Alphabet Soup application type
+==============================================
 AFFILIATION—Affiliated sector of industry
+==============================================
 CLASSIFICATION—Government organization classification
+=====================================================
 USE_CASE—Use case for funding
+=============================
 ORGANIZATION—Organization type
+==============================
 STATUS—Active status
+=====================
 INCOME_AMT—Income classification
+================================
 SPECIAL_CONSIDERATIONS—Special considerations for application
+=============================================================
 ASK_AMT—Funding amount requested
+================================
 IS_SUCCESSFUL—Was the money used effectively
+============================================
 
 PREPROCESSING
 =============
