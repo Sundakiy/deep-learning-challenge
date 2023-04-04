@@ -1,5 +1,5 @@
-Alphabet Soup Charity Funding Predictor Using Deep Learning Model
-==================================================================
+Alphabet Soup Charity Funding Predictor 
+=======================================
 ![X_](https://user-images.githubusercontent.com/80664491/229380083-6989d0d6-4682-4d9c-8872-9bb7ed953c87.jpg)
 
 Overview of the Analysis
@@ -10,26 +10,30 @@ The goal of this project is to create an algorithm using machine learning and ne
 
 Preprocessing
 =============
-What variable(s) are the target(s) for your model?
-What variable(s) are the features for your model?
-What variable(s) should be removed from the input data because they are neither targets nor features?
-Compiling, Training, and Evaluating the Model
+Using your knowledge of Pandas and scikit-learn’s StandardScaler(), The dataset is processed, followed by compiling, training, and evaluating the neural network model.
+The project is started by uploading the starter file to Google Colab prior to completing the preprocessing step.
 
-I preprocessed the data by:
+Charity_data.csv is read to a Pandas DataFrame, and the following are identified in the your dataset:
+
+![image](https://user-images.githubusercontent.com/80664491/229668086-bf57dca8-0e05-42fa-8c71-6ef2c9f5460d.png)
+
+The columns -non-beneficial ID columns, 'EIN' and 'NAME"
+![image](https://user-images.githubusercontent.com/80664491/229668812-05d88ad4-2729-435f-9893-2f575792c605.png)
+
+are dropped I preprocessed the data by:
 • dropping non-beneficial columns,
 • finding the number of data points for each unique value for each of the 
 columns that had more than 10 unique values - APPLICATION_TYPE and 
 
 Classification
 ==============
-• choosing a cutoff point of 600 and 300, respectively, to bin rare 
-categorical values together into a new value called "Other",
+• choosing a cutoff point of 600 and 300, respectively, to bin rare categorical values together into a new value called "Other",
 • using `pd.get_dummies()` to convert categorical data to numeric,
 • dividing the data into a target array (IS_SUCCESSFUL) and features arrays,
 • applying the `train_test_split` to create a testing and a training dataset,
 • and finally, using `StandardScaler` to scale the training and testing sets
-The resulting data included 44 features. The target variable (y) was
-IS_SUCCESSFUL. The data was split into training and test subsets.
+
+The resulting data included 44 features. The target variable (y) was IS_SUCCESSFUL. The data was split into training and test subsets.
 
 Compiling, Training, and Evaluating the Model
 ============================================
