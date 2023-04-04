@@ -63,37 +63,22 @@ Model 1
 ========
 The first attempt (Resources/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.9%. This means that 72.9% of the model’s predicted values align with the dataset’s true values.
 The hyperparameters used were:
-• layers = 2
 o layer1 = 80 neurons and ‘relu’ activation function
 o layer2 = 30 neurons and ‘relu’ activation function
 • epochs = 100
+![image](https://user-images.githubusercontent.com/80664491/229676251-b912213e-0cb1-4146-8678-49927d76373c.png)
 
 Model Optimization
 ===================
 For the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 76%. A function is created to to activate the choice of activations [relu, tanh, sigmoid] with min_value of 1 and max_value of 10 and step of 2/.
 
 The best model hyperparameters:
-{'activation': 'tanh',
- 'first_units': 9,
- 'num_layers': 1,
- 'units_0': 5,
- 'units_1': 7,
- 'units_2': 3,
- 'units_3': 1,
- 'units_4': 3,
- 'tuner/epochs': 20,
- 'tuner/initial_epoch': 7,
- 'tuner/bracket': 1,
- 'tuner/round': 1,
- 'tuner/trial_id': '0051'}
+![image](https://user-images.githubusercontent.com/80664491/229675906-007b77b7-63e2-4d85-8d84-c62ce462864c.png)
+
 
 Summary
 =========
-In the three attempts I made, the model was unable to achieve a target predictive accuracy higher than 72.8%. Hypertuning resulted in virtually no 
-improvement. I would consider using another classification model to see if it is better at predicting whether applicants will be successful if funded by Alphabet 
-Soup
-
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation. -->
+The first the model is able to  achieve a target predictive accuracy higher than 72.9%. While performing hypertuning optimize the model with accuracy of more than 75%.
 
 References
 ==========
