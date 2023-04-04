@@ -59,8 +59,8 @@ The top 3 model hyperparameter are obtained:
 Results
 =======
 
-Model 1
-========
+Model
+=====
 The first attempt (Resources/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.9%. This means that 72.9% of the model’s predicted values align with the dataset’s true values.
 The hyperparameters used were:
 o layer1 = 80 neurons and ‘relu’ activation function
