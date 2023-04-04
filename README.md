@@ -73,6 +73,7 @@ Model Optimization
 For the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 76%. A function is created to to activate the choice of activations [relu, tanh, sigmoid] with min_value of 1 and max_value of 10 and step of 2/.
 
 The best model hyperparameters:
+===============================
 ![image](https://user-images.githubusercontent.com/80664491/229675906-007b77b7-63e2-4d85-8d84-c62ce462864c.png)
 
 
