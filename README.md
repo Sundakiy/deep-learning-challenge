@@ -17,17 +17,14 @@ Charity_data.csv is read to a Pandas DataFrame, and the following are identified
 
 ![image](https://user-images.githubusercontent.com/80664491/229668086-bf57dca8-0e05-42fa-8c71-6ef2c9f5460d.png)
 
-The columns -non-beneficial ID columns, 'EIN' and 'NAME"
+• The columns -non-beneficial ID columns, 'EIN' and 'NAME"
 ![image](https://user-images.githubusercontent.com/80664491/229668812-05d88ad4-2729-435f-9893-2f575792c605.png)
 
-are dropped I preprocessed the data by:
-• dropping non-beneficial columns,
-• finding the number of data points for each unique value for each of the 
-columns that had more than 10 unique values - APPLICATION_TYPE and 
+• Finding the number of data points for each unique value for each of the columns that had more than 10 unique values - APPLICATION_TYPE and 
 
 Classification
 ==============
-• choosing a cutoff point of 600 and 300, respectively, to bin rare categorical values together into a new value called "Other",
+• choosing a cutoff point of 500 and 100, respectively, to bin rare categorical values together into a new value called "Other",
 • using `pd.get_dummies()` to convert categorical data to numeric,
 • dividing the data into a target array (IS_SUCCESSFUL) and features arrays,
 • applying the `train_test_split` to create a testing and a training dataset,
@@ -37,33 +34,43 @@ The resulting data included 44 features. The target variable (y) was IS_SUCCESSF
 
 Compiling, Training, and Evaluating the Model
 ============================================
-The model was required to achieve a target predictive accuracy higher than 
-75%. I made three official attempts using machine learning and neural networks. 
-They all resulted in the same accuracy rate – right around 72%, so a little short of 
-the required target accuracy.
+The model is required to achieve a target predictive accuracy higher than 75%. Several attempts are made using machine learning and neural networks. After applying the neural networks, each model had three-layer totals with hidden nodes dictated by the number of features.
+
+![image](https://user-images.githubusercontent.com/80664491/229672139-86e28c17-2baa-417d-8782-3b34f41ab7f4.png)
+
+
+As a result, 6461, parameters were created by this three-layer model with the first attempt producing, resulting in same accuracy rate – right around 72%, so a little short of the required target accuracy.
+![image](https://user-images.githubusercontent.com/80664491/229672670-bfcbc3d7-550a-4618-9255-ea1d165ebac3.png)
+
+A DataFrame containing training history of the 1st model is created as history_df = pd.DataFrame(fit_model.history) and the charts of the mode loss and model accuracy is plotted.
+
+![image](https://user-images.githubusercontent.com/80664491/229673523-b7504e66-888d-4d9c-8540-f741cb908297.png)
+
+
+Automated Neural Network Optimization
+=======================================
+For the second attempt, I have created an automated neural network optimization while maintaining the “NAME” in the dataset and achieved a higher accuracy at about 76%, thus surpassing the target of 75%. 
+![image](https://user-images.githubusercontent.com/80664491/229673142-fd676757-8f74-4a9c-9a34-89864822727d.png)
+
+The top 3 model hyperparameter are obtained:
+![image](https://user-images.githubusercontent.com/80664491/229673320-685c4317-ab91-44a3-8154-c99ca82c6c66.png)
 
 
 Results
 =======
 
-Using bulleted lists and images to support your answers, address the following questions:
-
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
-
-ATTEMPT #1
-The first attempt (Resources/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.8%. This was the highest accuracy score of the three models. This 
-means that 72.8% of the model’s predicted values align with the dataset’s true values.
+Model 1
+========
+The first attempt (Resources/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.9%. This means that 72.9% of the model’s predicted values align with the dataset’s true values.
 The hyperparameters used were:
 • layers = 2
-o layer1 = 9 neurons and ‘relu’ activation function
-o layer2 = 18 neurons and ‘relu’ activation function
+o layer1 = 80 neurons and ‘relu’ activation function
+o layer2 = 30 neurons and ‘relu’ activation function
 • epochs = 100
 
-ATTEMPT #2
-For my second attempt (Resources/AlphabetSoupCharity2.h5) I added another 
-layer. This attempt resulted in an accuracy score of 72.6%. This means that 72.6%
+Model Optimization
+===================
+FFor the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 72.6%. This means that 72.6%
 of the model’s predicted values align with the dataset’s true values.
 The hyperparameters used were:
 • layers = 3
@@ -72,17 +79,6 @@ o layer2 = 18 neurons : activation function = ‘relu’
 o layer3 = 27 neurons : activation function = ‘relu’
 • epochs = 100
 
-ATTEMPT #3
-For my third and final attempt (Resources/AlphabetSoupCharity3.h5) I kept the 
-third layer and changed the activation function for layers 2 and 3. This attempt 
-resulted in an accuracy score of 72.7%. This means that 72.7% of the model’s 
-predicted values align with the dataset’s true values.
-The hyperparameters used were:
-• layers = 3
-o layer1 = 9 neurons : activation function = ‘relu’
-o layer2 = 18 neurons : activation function = ‘tanh’
-o layer3 = 27 neurons : activation function = ‘tanh’
-• epochs = 100
 
 Summary
 =========
