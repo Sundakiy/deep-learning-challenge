@@ -70,15 +70,22 @@ o layer2 = 30 neurons and ‘relu’ activation function
 
 Model Optimization
 ===================
-FFor the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 72.6%. This means that 72.6%
-of the model’s predicted values align with the dataset’s true values.
-The hyperparameters used were:
-• layers = 3
-o layer1 = 9 neurons : activation function = ‘relu’
-o layer2 = 18 neurons : activation function = ‘relu’
-o layer3 = 27 neurons : activation function = ‘relu’
-• epochs = 100
+For the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 76%. A function is created to to activate the choice of activations [relu, tanh, sigmoid] with min_value of 1 and max_value of 10 and step of 2/.
 
+The best model hyperparameters:
+{'activation': 'tanh',
+ 'first_units': 9,
+ 'num_layers': 1,
+ 'units_0': 5,
+ 'units_1': 7,
+ 'units_2': 3,
+ 'units_3': 1,
+ 'units_4': 3,
+ 'tuner/epochs': 20,
+ 'tuner/initial_epoch': 7,
+ 'tuner/bracket': 1,
+ 'tuner/round': 1,
+ 'tuner/trial_id': '0051'}
 
 Summary
 =========
