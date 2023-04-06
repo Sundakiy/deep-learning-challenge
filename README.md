@@ -57,27 +57,14 @@ As a result, 3,298 parameters were created by this three-layer model resulting i
 Results
 =======
 
-Model
-=====
-The first attempt (Resources/AlphabetSoupCharity1.h5) resulted in an accuracy score of 72.9%. This means that 72.9% of the model’s predicted values align with the dataset’s true values.
-The hyperparameters used were:
-o layer1 = 80 neurons and ‘relu’ activation function
-o layer2 = 30 neurons and ‘relu’ activation function
-• epochs = 100
-![image](https://user-images.githubusercontent.com/80664491/229676251-b912213e-0cb1-4146-8678-49927d76373c.png)
+For the first part - (Resources/AlphabetSoupCharity.h5) layer. This attempt resulted in an accuracy score of 73%. 
 
-Model Optimization
-===================
-For the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 76%. A function is created to to activate the choice of activations [relu, tanh, sigmoid] with min_value of 1 and max_value of 10 and step of 2/.
-
-The best model hyperparameters:
-===============================
-![image](https://user-images.githubusercontent.com/80664491/229675906-007b77b7-63e2-4d85-8d84-c62ce462864c.png)
+For the optimation part - (Resources/AlphabetSoupCharity_Optimization.h5) layer. This attempt resulted in an accuracy score of 79%. 
 
 
 Summary
 =========
-The first the model is able to  achieve a target predictive accuracy higher than 72.9%. While performing hypertuning optimize the model with accuracy of more than 75%.
+The first the model achieves a accuracy higher than 73%. While  optimizing the model an accuracy of more than 79% is achieved.
 
 References
 ==========
