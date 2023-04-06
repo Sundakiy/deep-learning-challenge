@@ -36,10 +36,11 @@ Compiling, Training, and Evaluating the Model
 ============================================
 The model is required to achieve a target predictive accuracy higher than 75%. Several attempts are made using machine learning and neural networks. After applying the neural networks, each model had three-layer totals with hidden nodes dictated by the number of features.
 
-![image](https://user-images.githubusercontent.com/80664491/229672139-86e28c17-2baa-417d-8782-3b34f41ab7f4.png)
+![image](https://user-images.githubusercontent.com/80664491/230504714-80da87c8-2973-4ded-b343-d86df8a550fc.png)
 
 
-As a result, 6461, parameters were created by this three-layer model with the first attempt producing, resulting in same accuracy rate – right around 72%, so a little short of the required target accuracy.
+
+As a result, 477 parameters were created by this three-layer model with the first attempt producing,As a result which is about 73% accuracy, slightly below the ideal 75%.
 ![image](https://user-images.githubusercontent.com/80664491/229672670-bfcbc3d7-550a-4618-9255-ea1d165ebac3.png)
 
 A DataFrame containing training history of the 1st model is created as history_df = pd.DataFrame(fit_model.history) and the charts of the mode loss and model accuracy is plotted.
