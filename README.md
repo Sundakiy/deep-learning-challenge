@@ -50,7 +50,7 @@ Neural Network Optimization
 For the second attempt, I have created a neural network optimization while maintaining the “NAME” in the dataset and achieved a higher accuracy at about 79%, thus surpassing the target of 75%. 
 ![image](https://user-images.githubusercontent.com/80664491/230505464-3737113c-471a-4908-bd0b-bdd6a522aa41.png)
 
-As a result, 3,298 parameters were created by this three-layer model resulting in 79% accuracy, which is far  above the ideal 79%.
+As a result, 3,298 parameters were created by this three-layer model resulting in 79% accuracy, which is far  above the ideal 75%.
 
 ![image](https://user-images.githubusercontent.com/80664491/230505525-629ca6a8-24a2-46c5-a1ea-bf1c1576b185.png)
 
