@@ -41,21 +41,18 @@ The model is required to achieve a target predictive accuracy higher than 75%. S
 
 
 As a result, 477 parameters were created by this three-layer model with the first attempt producing,As a result which is about 73% accuracy, slightly below the ideal 75%.
-![image](https://user-images.githubusercontent.com/80664491/229672670-bfcbc3d7-550a-4618-9255-ea1d165ebac3.png)
 
-A DataFrame containing training history of the 1st model is created as history_df = pd.DataFrame(fit_model.history) and the charts of the mode loss and model accuracy is plotted.
-
-![image](https://user-images.githubusercontent.com/80664491/229673523-b7504e66-888d-4d9c-8540-f741cb908297.png)
+![image](https://user-images.githubusercontent.com/80664491/230505144-a85da41b-5bc2-4f7c-ab73-16ef560bd450.png)
 
 
-Automated Neural Network Optimization
+Neural Network Optimization
 =======================================
-For the second attempt, I have created an automated neural network optimization while maintaining the “NAME” in the dataset and achieved a higher accuracy at about 76%, thus surpassing the target of 75%. 
-![image](https://user-images.githubusercontent.com/80664491/229673142-fd676757-8f74-4a9c-9a34-89864822727d.png)
+For the second attempt, I have created a neural network optimization while maintaining the “NAME” in the dataset and achieved a higher accuracy at about 79%, thus surpassing the target of 75%. 
+![image](https://user-images.githubusercontent.com/80664491/230505464-3737113c-471a-4908-bd0b-bdd6a522aa41.png)
 
-The top 3 model hyperparameter are obtained:
-![image](https://user-images.githubusercontent.com/80664491/229673320-685c4317-ab91-44a3-8154-c99ca82c6c66.png)
+As a result, 3,298 parameters were created by this three-layer model resulting in 79% accuracy, which is far  above the ideal 79%.
 
+![image](https://user-images.githubusercontent.com/80664491/230505525-629ca6a8-24a2-46c5-a1ea-bf1c1576b185.png)
 
 Results
 =======
